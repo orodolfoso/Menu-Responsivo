@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Resposivo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"> 
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
     <h1>Breaking News!</h1>
-    <menu>
+    <i id="burguer" class="bi bi-list" onclick="clickMenu()"></i>
+    <menu id="itens">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Notícias</a></li>
@@ -43,5 +45,15 @@
 
 
     </main>
+<script>
+    function clickMenu(){
+        if (itens.style.display == 'block'){
+            itens.style.display = 'none'
+        } else{
+            itens.style.display = 'block'
+        }
+    }
+</script>
+
 </body>
 </html>
