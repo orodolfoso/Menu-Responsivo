@@ -1,71 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Resposivo</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"> 
+    <!-- CSS -->
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/media-query.css">
+    <!-- FONTAWESOME ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Javascript -->
+    <script src="js/scripts.js" defer></script>
+
 </head>
-<body onresize="mudouTamanho">
+
+<body>
+
     <header>
-    <h1>Breaking News!</h1>
-    <i id="burguer" class="bi bi-list" onclick="clickMenu()"></i>
-    <menu id="itens">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Notícias</a></li>
-            <li><a href="#">Futebol</a></li>
-            <li><a href="#">Saúde</a></li>
-            <li><a href="#">Política</a></li>
-        </ul>
-    </menu>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>LOGO</h1>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link"></a>Home</li>
+                    <li class="nav-item"><a href="#" class="nav-link"></a>Sobre</li>
+                    <li class="nav-item"><a href="#" class="nav-link"></a>Contato</li>
+                </ul>
+            </div>
+
+            <div class="login-button">
+                <button><a href="#"></a>Entar</button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link"></a>Home</li>
+                <li class="nav-item"><a href="#" class="nav-link"></a>Sobre</li>
+                <li class="nav-item"><a href="#" class="nav-link"></a>Contato</li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#"></a>Entar</button>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <article>
-            <h2>Notícias e informações do Brasil e do Mundo.</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sunt, laboriosam recusandae aspernatur officia veritatis qui ex esse dolorem molestiae. Eum, maxime. Temporibus, explicabo consequatur aspernatur doloribus aut omnis et.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat iusto hic ducimus molestias asperiores tenetur velit quae voluptate dicta error omnis pariatur officia, veritatis adipisci numquam harum magnam sed quam.
-            </p>
-
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum et eveniet laborum laboriosam deserunt reiciendis aperiam excepturi sed, beatae dolore, nemo ea culpa? Nobis natus accusamus et quae! Maxime, velit?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia veniam vitae, ea rem repudiandae in veritatis ullam voluptatibus iusto, tenetur perferendis consectetur. Iusto ducimus vel eaque fugiat consequuntur omnis possimus!
-            </p>
-
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta quasi odio, sint vitae, cumque ut rem ipsum recusandae natus, fugiat repellat nihil similique! Assumenda, natus in. Tenetur architecto ut quam.
-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, architecto maiores assumenda, molestiae ipsum accusantium animi voluptatem qui temporibus ipsa doloribus aut molestias expedita quidem quasi! Ducimus corrupti vel dolorum.
-            </p>
-
-        </article>
-
-
-    </main>
-<script>
-
-    function mudouTamanho() {
-        if (window.innerwidth >= 768){
-            itens.style.dislpay = 'block'
-        } else {
-            itens.style.dislpay = 'none'
-        }
-    }
-
-
-
-    function clickMenu(){
-        if (itens.style.display == 'block'){
-            itens.style.display = 'none'
-        } else{
-            itens.style.display = 'block'
-        }
-    }
-</script>
 
 </body>
+
 </html>
